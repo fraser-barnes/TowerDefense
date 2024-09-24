@@ -22,5 +22,9 @@ public class FollowPath : MonoBehaviour
         {
             target++;
         }
+        if (target > waypoints.Length - 1)
+        {
+            Destroy(gameObject);
+        }
     }
 }
